@@ -1,0 +1,9 @@
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+.container-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

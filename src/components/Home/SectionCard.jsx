@@ -4,17 +4,16 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import '../style-sheets/SectionCard.css'
+import '../Home/style-sheets-home/SectionCard.css';
 import IconButton from '@mui/material/IconButton';
 
 
 function SectionCard(props) {
-
     return (
         <Card sx={{ width: 150, heigth: 70, flex: 1, margin: 5, backgroundColor: '#244e73', color: ' white' }}>
             <CardContent className='container-card-content'>
                 <div className='card-content'>
-                    <Typography variant="p">
+                    <Typography variant="h5">
                         {props.sectionName}
                     </Typography>
                     <CardActions>
@@ -31,6 +30,4 @@ function SectionCard(props) {
     );
 }
 
-
-
-export default SectionCard
+export default SectionCard;

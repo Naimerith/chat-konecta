@@ -1,7 +1,7 @@
-import React from 'react'
-import Logo from '../images/logo.png'
-import '../style-sheets/Header.css'
-import { Icon } from '@material-ui/core'
+import React from 'react';
+import Logo from '../../images/logo.png';
+import '../Header/style-sheets-header/Header.css';
+import { Icon } from '@material-ui/core';
 
 const Header = () => {
   return (
@@ -22,4 +22,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

@@ -3,11 +3,14 @@ import CourseCard from './CourseCard';
 import SectionCard from './SectionCard';
 import { TextSnippet, Newspaper, PersonPin } from '@mui/icons-material';
 import '../Home/style-sheets-home/Home.css';
+import Header from '../Header/Header';
 
 
-const Home = () => {
+const Home = (userGlobal) => {
+  console.log(userGlobal.displayName);
   return (
     <div>
+      <Header />
       <h1>Cursos</h1>
       <div className='container-cardCourse'>
         <CourseCard

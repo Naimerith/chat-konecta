@@ -6,9 +6,19 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import '../Home/style-sheets-home/SectionCard.css';
 import IconButton from '@mui/material/IconButton';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function SectionCard(props) {
+
+    let navigate = useNavigate();
+
+    const redirect = () => {
+        navigate('/contacto')
+    }
+
+
     return (
         <Card sx={{ width: 150, heigth: 70, flex: 1, margin: 5, backgroundColor: '#244e73', color: ' white' }}>
             <CardContent className='container-card-content'>
@@ -17,7 +27,11 @@ function SectionCard(props) {
                         {props.sectionName}
                     </Typography>
                     <CardActions>
-                        <Button sx={{ color: 'white', backgroundColor: '#ce0f65', color: ' whitesmoke' }} size='small' text-transform='lowercase'>
+                        <Button
+                            sx={{ color: 'white', backgroundColor: '#ce0f65', color: ' whitesmoke' }}
+                            size='small'
+                            text-transform='lowercase'
+                            onClick={redirect}>
                             {props.nameButton}
                         </Button>
                     </CardActions>

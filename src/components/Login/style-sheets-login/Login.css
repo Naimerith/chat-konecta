@@ -1,0 +1,24 @@
+.login-with-google{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70wh;
+    height: 70vh;
+}
+button{
+    background-color: #ce0f65;
+    /* min-width: 150px; */
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: white;
+}
+img{
+    width: 250px !important;
+    height: 150px !important;
+}

@@ -11,7 +11,7 @@ const Home = (userGlobal) => {
   return (
     <div>
       <Header />
-      <h1>Cursos</h1>
+      <h1 className='text-main'>Cursos</h1>
       <div className='container-cardCourse'>
         <CourseCard
           courseName='Tranformación Digital'

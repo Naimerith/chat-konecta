@@ -6,7 +6,7 @@
     width: 70wh;
     height: 70vh;
 }
-button{
+.btn-login{
     background-color: #ce0f65;
     /* min-width: 150px; */
     height: 40px;
@@ -18,7 +18,7 @@ button{
     cursor: pointer;
     color: white;
 }
-img{
+.img-logo{
     width: 250px !important;
     height: 150px !important;
 }

@@ -13,8 +13,8 @@ const Login = () => {
   };
   return (
     <div className='login-with-google' >
-      <img src={Logo} alt="" />
-      <button onClick={loginWithGoogle}>Acceder con Google</button>
+      <img className='img-logo' src={Logo} alt="" />
+      <button className='btn-login' onClick={loginWithGoogle}>Acceder con Google</button>
     </div>
   )
 }

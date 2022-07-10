@@ -1,0 +1,4 @@
+.container-main-viewContact{
+  display: flex;
+  flex-direction: row-reverse;
+}

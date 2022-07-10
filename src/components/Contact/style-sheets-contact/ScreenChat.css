@@ -1,0 +1,63 @@
+.container-main-screenChat{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 10px 50px;
+}
+.btn-return{
+    width: 10%;
+    height:30px;
+    background-color: #002855;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 10PX;
+}
+.text-title-viewContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20PX;
+    color: white;
+}
+.container-screem-chat{
+    width: 100%;
+    height: 70%;
+    background-color: #244e73;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.container-messageInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.message-input{
+    background-color: #244e73;
+    border-radius: 10px;
+    width: 80%;
+    height: 35px;
+    border: none;
+    padding: 0 0 0 10px;
+    color: white;
+    outline: none;
+}
+input::placeholder {
+    font-style: italic;
+}
+.icon-attach{
+    color: white;
+    font-weight: 500;
+}
+.btn-sendMessage{
+  width: 15%;
+  height: 35px;
+  color: white;
+  background-color: #ce0f65;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 3px;
+}

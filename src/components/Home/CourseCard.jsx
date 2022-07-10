@@ -26,7 +26,7 @@ function CourseCard(props) {
               curso
             </Typography>
           </div>
-          <img src={Bombilla} alt="" />
+          <img className='img-bombilla' src={Bombilla} alt="" />
         </div>
         <Typography variant="p" component="div">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero ducimus tempora saepe necessitatibus dolore veritatis quasi corrupti aspernatur nemo dolorum non iste, aliquid iusto soluta quas, magni qui tenetur.

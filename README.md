@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+ 
+RETO PARA FRONT-END DEVELOPERS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Contexto
 
-## Available Scripts
+En Konecta la prioridad son nuestros colaboradores, como consecuencia invertimos gran parte de nuestro esfuerzo para que ellos vivan una mejor experiencia en nuestra compañía y se vea reflejado en las emociones positivas que transmiten en cada interacción con los clientes de nuestros clientes.
 
-In the project directory, you can run:
+La necesidad
 
-### `npm start`
+Como parte de las tareas en beneficio de nuestros colaboradores es importante cultivar la cultura de la innovación, es por ello que dentro de nuestra herramienta de aprendizaje necesitamos un segmento donde nuestros colaboradores puedan ingresar y chatear con un mentor para que los ayude en su aprendizaje.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Descripción
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El desafío presentado para este proceso está asociado a un nuevo producto digital que estamos desarrollando: Talent. Requerimos que sea en formato SPA( Single Page Application). Necesitamos que nos apoyes implementando las siguientes vistas:
 
-### `npm test`
+Vista Home
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Es la primera vista a mostrar al colaborador donde podrá visualizar los cursos y demás herramientas disponibles, aquí encontrarán la opción de contactar con un mentor
+ 
+![homeReto](https://user-images.githubusercontent.com/89501132/178346665-29561b05-2723-4a24-8fdf-699999a46dc7.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Vista Contactar con un mentor
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+En esta vista cada colaborador podrá comunicarse con un mentor especializado, para ello disponemos de un chat integrado  donde elegirá con quién quiere hablar. 
+Como mínimo tu proyecto debe permitir escribir mensajes a un mentor y estos mensajes deben persistir en alguna base de datos. (Puedes usar Firebase u otra ).
 
-### `npm run eject`
+ ![vistaContacto](https://user-images.githubusercontent.com/89501132/178346692-15783924-a545-4c39-9f7d-26a4c646ca89.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ ![vistaChat](https://user-images.githubusercontent.com/89501132/178346707-ace3501c-1c87-40d4-aa86-f835dcffa020.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Paleta de colores:
+ 	#CE0F65
+ 	#002855
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Consideraciones:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para el reto con Vue:
+●	Usar Vue 2 como framework de desarrollo. 
+●	Intenta crear muchos componentes separados para que el código sea más fácil de leer.
+●	 Vuetify  UI como framework de estilos.
 
-### Analyzing the Bundle Size
+Para el reto con React:
+●	Usar React (hooks) como framework de desarrollo. 
+-	Intenta crear muchos componentes separados para que el código sea más fácil de leer.
+●	 Material UI como framework de estilos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ambos:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+●	 Enviar la URL con la web funcional (firebase hosting, heroku, vercel etc).
+●	Buenas prácticas en general (Código y Git) , compartenos tu repositorio donde trabajaste.
+●	Tu imaginación como límite. ¡Mucha suerte !  :) 

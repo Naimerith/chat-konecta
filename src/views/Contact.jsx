@@ -12,7 +12,7 @@ const Contact = () => {
       <Header />
       <div className='container-main-viewContact'>
         <div className='sidebar-mentorsList'>
-          <HeaderSidebar />
+          <HeaderSidebar mentorActive={mentorActive} nombreMentor={mentorActive} />
           <Sidebar setMentorActive={setMentorActive} />
         </div>
         <ScreenChat mentorActive={mentorActive} />

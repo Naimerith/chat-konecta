@@ -30,16 +30,17 @@ const Sidebar = ({ setMentorActive }) => {
   return (
     <div className='sidebar-mentorsList'>
       <h3 className='text-more-mentors'>Más Mentores</h3>
-      {ListMentors ? ListMentors.map(mentor => {
-        return <div className='container-more-mentor'>
+      {ListMentors ? ListMentors.map((mentor, index) => {
+        return (<div className='container-more-mentor'>
           <div
+            key={index}
             onClick={() => setMentorActive(mentor.nombre)}
             className='section-more-mentors'>
-            <p className='text-description'>{mentor.nombre}</p>
+            <p key={index} className='text-description'>{mentor.nombre}</p>
             <p className='text-description'>mentor</p>
           </div>
           <Avatar className='avatar-more-mentor'></Avatar>
-        </div>
+        </div>)
       }) : null}
     </div>
   );

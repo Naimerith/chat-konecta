@@ -3,10 +3,17 @@ import CourseCard from '../components/CourseCard';
 import SectionCard from '../components/SectionCard';
 import Header from '../components/Header';
 import { TextSnippet, Newspaper, PersonPin } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
+
 import '../styles-sheets/Home.css';
 
-const Home = (userGlobal) => {
-  console.log(userGlobal.displayName);
+const Home = () => {
+  let navigate = useNavigate();
+  const redirect = () => {
+    console.log('diste click al boton')
+    navigate('/contacto');
+  };
+
   return (
     <div>
       <Header />
@@ -34,6 +41,8 @@ const Home = (userGlobal) => {
           icon={<Newspaper></Newspaper>}
         />
         <SectionCard
+          onclick={redirect}
+          data-name="/contacto"
           sectionName='Contactar con un mentor'
           nameButton='Enviar mensaje'
           icon={<PersonPin></PersonPin>}

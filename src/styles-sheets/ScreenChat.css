@@ -24,9 +24,36 @@
 }
 .container-screem-chat{
     width: 100%;
-    height: 70%;
+    height: 300px;
     background-color: #244e73;
     margin-top: 10px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+.container-screem-chat::-webkit-scrollbar,
+.container-msg::-webkit-scrollbar
+ {
+    -webkit-appearance: none;
+}
+
+.container-screem-chat::-webkit-scrollbar:horizontal,
+.container-msg::-webkit-scrollbar:horizontal {
+    height: 3px;
+}
+
+.container-screem-chat::-webkit-scrollbar:vertical,
+.container-msg::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+.container-screem-chat::-webkit-scrollbar-thumb,
+.container-msg::-webkit-scrollbar-thumb {
+    background-color: #F3E9DF;
+    border-radius: 20px;
+}
+
+.container-screem-chat::-webkit-scrollbar-track,
+.container-msg::-webkit-scrollbar-track {
     border-radius: 10px;
 }
 .container-messageInput{
@@ -61,4 +88,20 @@ input::placeholder {
   border-radius: 10px;
   letter-spacing: 3px;
   cursor: pointer;
+}
+.container-msg{
+    width: 30%;
+    height: 110px;
+    background-color: white;
+    overflow-y: scroll; 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.msg{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin: 0 15px;
 }

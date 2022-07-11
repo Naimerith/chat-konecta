@@ -1,10 +1,12 @@
+//eslint-disable-next-line
 import React, { useState, useEffect } from 'react';
 import { Icon } from '@material-ui/core';
+import { Avatar } from '@material-ui/core';
 import { firebaseApp } from '../Firebase/credenciales';
 import { getFirestore, doc, setDoc, collection, getDocs } from 'firebase/firestore';
-import '../styles-sheets/ScreenChat.css';
 import HeaderChat from './HeaderChat';
-import Messages from './Messages';
+import '../styles-sheets/ScreenChat.css';
+
 
 const firestore = getFirestore(firebaseApp);
 
@@ -12,17 +14,15 @@ const ScreenChat = ({ mentorActive }) => {
   const [inputMessage, setInputMessage] = useState('');
   const [allMessages, setAllMessages] = useState('');
 
-
   const sendMessage = (e) => {
     e.preventDefault(); //Evito que se actualice 
     const docRef = doc(firestore, `mentors/${mentorActive}/messages/${new Date().getTime()}`);
     setDoc(docRef, {
       id: new Date().getTime(),
       message: inputMessage,
-      // usuario: user.displayname,
-      // foto: user.photoURL ,
     });
-    setInputMessage(" ");
+    setInputMessage("");
+    getAllMenssages();
   };
 
   async function getAllMenssages() {
@@ -32,6 +32,7 @@ const ScreenChat = ({ mentorActive }) => {
     messagesCifre.forEach(msg => {
       arrMessages.push(msg.data())
     });
+    console.log(arrMessages);
     setAllMessages(arrMessages)
   };
 
@@ -45,10 +46,18 @@ const ScreenChat = ({ mentorActive }) => {
       <h1 className='text-title-viewContact'>Chat reciente</h1>
       <HeaderChat nombreMentor={mentorActive} />
       <div className='container-screem-chat'>
-        {allMessages ?
-          allMessages.map(msg => {
-            return <Messages messagesFb={msg} />
-          })
+        {allMessages ? allMessages.map(msg => {
+          return <div className='msg'>
+            <Avatar />
+            <div className='container-msg'>
+              <h4>Naimerith: </h4>
+              {/* <h5 className='messsage-date'>
+                Fecha y Hora: {new Date(msg.id).toLocaleString}
+              </h5> */}
+              <p>{msg.message}</p>
+            </div>
+          </div>
+        })
           : null}
       </div>
       <form
@@ -62,7 +71,8 @@ const ScreenChat = ({ mentorActive }) => {
         <Icon className='icon-attach'>
           attach_file
         </Icon>
-        <button onSubmit={sendMessage}
+        <button
+          onClick={sendMessage}
           disabled={mentorActive ? false : true}
           className='btn-sendMessage'
           type='submit'>

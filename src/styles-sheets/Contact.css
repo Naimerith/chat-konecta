@@ -10,4 +10,26 @@
   padding: 15px;
   justify-content: flex-start;
   align-items: center;
+  overflow-y: scroll;
+}
+.sidebar-mentorsList::-webkit-scrollbar
+ {
+    -webkit-appearance: none;
+}
+
+.sidebar-mentorsList::-webkit-scrollbar:horizontal {
+    height: 3px;
+}
+
+.sidebar-mentorsList::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+.sidebar-mentorsList::-webkit-scrollbar-thumb {
+    background-color: #244e73;
+    border-radius: 20px;
+}
+
+.sidebar-mentorsList::-webkit-scrollbar-track {
+    border-radius: 10px;
 }

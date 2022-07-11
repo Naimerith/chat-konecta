@@ -4,44 +4,43 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import '../styles-sheets/SectionCard.css';
 import IconButton from '@mui/material/IconButton';
 import { useNavigate } from 'react-router-dom';
+import '../styles-sheets/SectionCard.css';
 
 
 
 function SectionCard(props) {
 
-    let navigate = useNavigate();
+  let navigate = useNavigate();
+  const redirect = () => {
+    navigate('/contacto')
+  };
 
-    const redirect = () => {
-        navigate('/contacto')
-    }
-
-
-    return (
-        <Card sx={{ width: 150, heigth: 70, flex: 1, margin: 5, backgroundColor: '#244e73', color: ' white' }}>
-            <CardContent className='container-card-content'>
-                <div className='card-content'>
-                    <Typography variant="h5">
-                        {props.sectionName}
-                    </Typography>
-                    <CardActions>
-                        <Button
-                            sx={{ color: 'white', backgroundColor: '#ce0f65', color: ' whitesmoke' }}
-                            size='small'
-                            text-transform='lowercase'
-                            onClick={redirect}>
-                            {props.nameButton}
-                        </Button>
-                    </CardActions>
-                </div>
-                <IconButton>
-                    {props.icon}
-                </IconButton>
-            </CardContent>
-        </Card>
-    );
+  return (
+    <Card
+      sx={{ width: 150, heigth: 70, flex: 1, margin: 5, backgroundColor: '#244e73', color: ' white' }}>
+      <CardContent className='container-card-content'>
+        <div className='card-content'>
+          <Typography variant="h5">
+            {props.sectionName}
+          </Typography>
+          <CardActions>
+            <Button
+              sx={{ color: 'white', backgroundColor: '#ce0f65', color: ' whitesmoke' }}
+              size='small'
+              text-transform='lowercase'
+              onClick={redirect}>
+              {props.nameButton}
+            </Button>
+          </CardActions>
+        </div>
+        <IconButton>
+          {props.icon}
+        </IconButton>
+      </CardContent>
+    </Card>
+  );
 }
 
 export default SectionCard;

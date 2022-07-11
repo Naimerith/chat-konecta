@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
 import CourseCard from '../components/CourseCard';
 import SectionCard from '../components/SectionCard';
+import Header from '../components/Header';
 import { TextSnippet, Newspaper, PersonPin } from '@mui/icons-material';
 import '../styles-sheets/Home.css';
-import Header from '../components/Header';
-
 
 const Home = (userGlobal) => {
   console.log(userGlobal.displayName);
@@ -41,8 +40,7 @@ const Home = (userGlobal) => {
         />
       </div>
     </div>
-
-  )
+  );
 }
 
 export default Home;

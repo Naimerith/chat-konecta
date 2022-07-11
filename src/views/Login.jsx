@@ -1,8 +1,8 @@
 import React from 'react';
-import firebaseApp from '../../Firebase/credenciales';
+import firebaseApp from '../Firebase/credenciales';
 import { getAuth, GoogleAuthProvider, signInWithRedirect } from 'firebase/auth';
-import Logo from '../../images/logo.png';
-import '../Login/style-sheets-login/Login.css'
+import Logo from '../images/logo.png';
+import '../styles-sheets/Login.css';
 
 const auth = getAuth(firebaseApp);
 const googleProvider = new GoogleAuthProvider();

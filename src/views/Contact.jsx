@@ -1,8 +1,8 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Header from '../Header/Header';
-import ScreenChat from './ScreenChat';
-import '../Contact/style-sheets-contact/Contact.css';
+import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
+import ScreenChat from '../components/ScreenChat';
+import '../styles-sheets/Contact.css';
 
 const Contact = () => {
   return (

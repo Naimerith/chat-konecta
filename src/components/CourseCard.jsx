@@ -8,8 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import { AccessAlarm, PlayCircleOutline, Paid } from '@mui/icons-material';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import Bombilla from '../../images/bombilla.png'
-import '../Home/style-sheets-home/CourseCard.css'
+import Bombilla from '../images/bombilla.png';
+import '../styles-sheets/CourseCard.css';
 
 function CourseCard(props) {
 

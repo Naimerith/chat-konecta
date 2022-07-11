@@ -1,30 +1,17 @@
-import React, { useState } from 'react';
-import Logo from '../../images/logo.png';
-import '../Header/style-sheets-header/Header.css';
+import React from 'react';
+import Logo from '../images/logo.png';
+import '../styles-sheets/Header.css';
 import { Icon } from '@material-ui/core';
-import { useNavigate } from 'react-router-dom';
-import Login from '../Login/Login';
-import Home from '../Home/Home';
-import Contact from '../Contact/Contact';
-import firebaseApp from '../../Firebase/credenciales';
-import { getAuth, GoogleAuthProvider, signInWithRedirect } from 'firebase/auth';
 
 // const auth = getAuth(firebaseApp);
 // const googleProvider = new GoogleAuthProvider;
 
 
-const Header = (userGlobal) => {
-  console.log(userGlobal.displayName);
+const Header = () => {
   // let navigate = useNavigate();
   // const redirect = () => {
   //   navigate('/')
   // };
-
-  // const loginConGoogle = () => {
-  //   signInWithRedirect(auth, googleProvider);
-  // };
-
-
   // const redirectLogin = () => {
   //   navigate('/login')
   // };
@@ -35,10 +22,9 @@ const Header = (userGlobal) => {
       {/* // onClick={redirect} /> */}
       <div className='header-user'>
         <p className='section-userLogged'>
-          {userGlobal.displayName}
-          {/* <Icon>
+          {<Icon>
             account_circle
-          </Icon> */}
+          </Icon>}
         </p>
         <Icon className='icon-Notification'>
           notifications

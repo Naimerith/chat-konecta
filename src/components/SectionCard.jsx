@@ -4,7 +4,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import '../Home/style-sheets-home/SectionCard.css';
+import '../styles-sheets/SectionCard.css';
 import IconButton from '@mui/material/IconButton';
 import { useNavigate } from 'react-router-dom';
 

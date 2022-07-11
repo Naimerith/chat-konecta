@@ -1,9 +1,9 @@
 import React from 'react'
-import CourseCard from './CourseCard';
-import SectionCard from './SectionCard';
+import CourseCard from '../components/CourseCard';
+import SectionCard from '../components/SectionCard';
 import { TextSnippet, Newspaper, PersonPin } from '@mui/icons-material';
-import '../Home/style-sheets-home/Home.css';
-import Header from '../Header/Header';
+import '../styles-sheets/Home.css';
+import Header from '../components/Header';
 
 
 const Home = (userGlobal) => {

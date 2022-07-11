@@ -1,0 +1,27 @@
+.sidebar-mentorsList{
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #063365;
+    padding: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.container-more-mentor{
+    display: flex;
+    background-color: #244e73;
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+.container-more-mentor{
+    margin:  5px 10px;
+    padding: 5px 15px;
+    justify-content: flex-end;
+}
+.section-more-mentors{
+    margin-right: 10px;
+}

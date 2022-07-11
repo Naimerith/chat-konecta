@@ -2,3 +2,12 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+.sidebar-mentorsList{
+  flex-direction: column;
+  height: 100%;
+  background-color: #063365;
+  padding: 15px;
+  justify-content: flex-start;
+  align-items: center;
+}

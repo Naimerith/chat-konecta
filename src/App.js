@@ -1,18 +1,24 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
+//import firebaseApp from './Firebase/credenciales';
 import Home from './views/Home';
 import Contacto from './views/Contact';
 import Login from './views/Login';
+//import { getAuth } from 'firebase/auth';
+//import { useAuthState } from 'react-firebase-hooks/auth';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from 'react-router-dom';
+//const auth = getAuth(firebaseApp);
 
 function App() {
-  const [mentorActive, setMentorActive] = useState(null);
-
+  // const [user] = useAuthState(auth);
   return (
+    // <>
+    //   {user ? <Home /> : <Login />}
+    // </>
     <div className='App'>
       {
         <Router>

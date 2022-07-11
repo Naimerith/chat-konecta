@@ -60,4 +60,5 @@ input::placeholder {
   border: none;
   border-radius: 10px;
   letter-spacing: 3px;
+  cursor: pointer;
 }

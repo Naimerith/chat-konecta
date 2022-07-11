@@ -1,5 +1,5 @@
 import React from 'react';
-import firebaseApp from '../Firebase/credenciales';
+import { firebaseApp } from '../Firebase/credenciales';
 import { getAuth, GoogleAuthProvider, signInWithRedirect } from 'firebase/auth';
 import Logo from '../images/logo.png';
 import '../styles-sheets/Login.css';
@@ -11,6 +11,7 @@ const Login = () => {
   const loginWithGoogle = () => {
     signInWithRedirect(auth, googleProvider);
   };
+
   return (
     <div className='login-with-google' >
       <img className='img-logo' src={Logo} alt="" />

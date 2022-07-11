@@ -3,7 +3,7 @@ import { Avatar } from '@material-ui/core';
 import '../styles-sheets/HeaderSidebar.css';
 
 
-const HeaderSidebar = () => {
+const HeaderSidebar = ({ mentorActive }) => {
     return (
         <div className='containerMain'>
             <h1 className='text-tittle'>❯ Transformación Digital</h1>
@@ -11,7 +11,7 @@ const HeaderSidebar = () => {
             <div className='container-mentor-select'>
                 <div className='description-mentor-select'>
                     <Avatar></Avatar>
-                    <p className='text-description' >Nombre</p>
+                    <p className='text-description' ></p>
                     <p className='text-description'>Cargo</p>
                 </div>
                 <div className='container-section-skills'>

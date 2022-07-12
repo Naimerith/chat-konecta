@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Avatar } from '@material-ui/core';
 import { firebaseApp } from '../Firebase/credenciales';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import Mentors from './Mentors';
 import '../styles-sheets/Sidebar.css';
 
 const firestore = getFirestore(firebaseApp);
@@ -31,16 +31,13 @@ const Sidebar = ({ setMentorActive }) => {
     <div className='sidebar-mentorsList'>
       <h3 className='text-more-mentors'>Más Mentores</h3>
       {ListMentors ? ListMentors.map((mentor, index) => {
-        return (<div className='container-more-mentor'>
-          <div
+        return (
+          <Mentors
             key={index}
-            onClick={() => setMentorActive(mentor.nombre)}
-            className='section-more-mentors'>
-            <p key={index} className='text-description'>{mentor.nombre}</p>
-            <p className='text-description'>mentor</p>
-          </div>
-          <Avatar className='avatar-more-mentor'></Avatar>
-        </div>)
+            onclick={() => setMentorActive(mentor.nombre)}
+            nombreMentor={mentor.nombre}
+          />
+        )
       }) : null}
     </div>
   );

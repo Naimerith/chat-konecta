@@ -1,10 +1,10 @@
 //eslint-disable-next-line
 import React, { useState, useEffect } from 'react';
 import { Icon } from '@material-ui/core';
-import { Avatar } from '@material-ui/core';
 import { firebaseApp } from '../Firebase/credenciales';
 import { useNavigate } from 'react-router-dom';
 import { getFirestore, doc, setDoc, collection, getDocs } from 'firebase/firestore';
+import Message from '../components/Message';
 import '../styles-sheets/ScreenChat.css';
 
 const firestore = getFirestore(firebaseApp);
@@ -43,7 +43,7 @@ const ScreenChat = ({ mentorActive }) => {
   };
 
   useEffect(() => {
-    getAllMenssages();
+    (getAllMenssages());
   }, [mentorActive])
 
   return (
@@ -52,16 +52,13 @@ const ScreenChat = ({ mentorActive }) => {
       <h1 className='text-title-viewContact'>Chat reciente</h1>
       <div className='container-screem-chat'>
         {allMessages ? allMessages.map((msg, index) => {
-          return (<div key={index} className='msg'>
-            <Avatar />
-            <div className='container-msg'>
-              <h4>Naimerith: </h4>
-              {/* <h5 className='messsage-date'>
-                Fecha y Hora: {new Date(msg.id).toLocaleString}
-              </h5> */}
-              <p key={index} >{msg.message}</p>
-            </div>
-          </div>)
+          return (
+            <Message
+              key={index}
+              msg={msg.message}
+              nombre='Naimerith'
+            />
+          )
         })
           : null}
       </div>
